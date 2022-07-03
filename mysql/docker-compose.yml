@@ -21,7 +21,7 @@ services:
          - "13306:3306"
 
       volumes:
-         - ./_res:/_res
+         - ../_res:/_res
          - ./conf/conf.d:/etc/mysql/conf.d
          - ./conf/mysql.conf.d:/etc/mysql/mysql.conf.d
          - ./data:/var/lib/mysql
