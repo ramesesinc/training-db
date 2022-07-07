@@ -1,0 +1,19 @@
+
+## Go to training-db resource folder 
+cd ~/training-db/_res
+
+## Pull updates
+git pull
+
+## Connect to mysql container
+docker exec -it mysql bash
+
+## Go to _res folder
+cd /_res
+
+## Execute database patch
+mysql -u root -p1234 -v  <  patch-2022-07-07.sql
+
+## Exit the container
+exit
+
